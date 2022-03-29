@@ -1,0 +1,81 @@
+/*
+	Diseño Web: Zkpro_Designer,
+	Desarrollador: Alfredo Marcano;
+	Estylos: Alfredo Marcano;
+	Estrutura: Alferdo Marcano;
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	min-height: 100vh;
+	position: relative;
+	background: orange
+}
+
+	nav{
+		position: fixed;
+		background: red;
+		width: 100%;
+		height: 70px;
+		display: block;
+	}
+
+.cont85{ margin: 0 auto; width: 85%; }
+.cont90{ margin: 0 auto; width: 90%; }
+.d-flex-bet{ display: flex; justify-content: space-between; }
+
+section{
+	min-height: 100vh;
+}
+
+.sc1{
+	background: green;
+}
+
+.sc2{
+	background: blue;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+	article{
+		width: 100%;
+	}
+
+.sc3{
+	background: skyblue;
+}
+
+.sc4{
+	background: yellow;
+}
+
+.sc5{
+	background: purple;
+}
+
+.sc6{
+	background: pink;
+}
+
+.sc7{
+	background: red;
+}
+
+.sc8{
+	background: orange;
+}
+
+.sc9{
+	background: green;
+}
+
+footer{
+	background: black;
+	color: white;
+}
