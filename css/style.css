@@ -44,7 +44,7 @@ section{
 }
 
 .sc1{
-	background: green;
+	/*background: green;*/
 }
 
 .sc2{
@@ -71,21 +71,21 @@ section{
 
 	.sc2-img{
 		background: var(--orange-backgroun);
-		padding: 1.5rem 1.5rem 1.5rem 7rem;
+		padding: 1.5rem 1.5rem 1.5rem 6rem;
 		position: relative;
 		display: flex;
 	}
 
-		.sc2-title{
+		.sc2-img:before{
+			z-index: 1;
+			content: 'FOUNDER';
+			position: absolute;
+			top: 50%;
+			left: 0;	
+			font-size: 6em;
+			transform: translate(-50%, -50%) rotate(270deg);
 			color: white;
-			margin-left: -25px;
-			position: relative;
 		}
-			.sc2-title span{
-				position: absolute;
-				font-size: 2em;
-				text-transform: uppercase;
-			}
 
 	.sc2-text{
 		color: white;
@@ -152,23 +152,23 @@ section{
 		}
 
 .sc5{
-	background: purple;
+	/*background: purple;*/
 }
 
 .sc6{
-	background: pink;
+	/*background: pink;*/
 }
 
 .sc7{
-	background: red;
+	/*background: red;*/
 }
 
 .sc8{
-	background: orange;
+	/*background: orange;*/
 }
 
 .sc9{
-	background: green;
+	/*background: green;*/
 }
 
 footer{
