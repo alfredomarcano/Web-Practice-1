@@ -31,6 +31,7 @@ header{
 		width: 100%;
 		height: 70px;
 		display: block;
+		z-index: 99;
 	}
 
 .cont85{ margin: 0 auto; width: 85%; }
@@ -39,7 +40,7 @@ header{
 
 section{
 	padding: 2em;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 }
 
 .sc1{
@@ -95,11 +96,36 @@ section{
 		}
 
 .sc3{
+	background: yellow;
+	position: relative;
+	background: linear-gradient(to right, white 47%, var(--orange-backgroun) 47%);
+}
+
+	.sc3:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 1.5em;
+		background: linear-gradient(to bottom, var(--grey-gradient), var(--black-gradient))
+	}
+
+	.sc3-text{
+		padding:0 6em 0 3em;
+	}
+
+	.sc3-img{
+
+	}
+
+.sc4{
 	background: white;
 	position: relative;
 }
 
-	.sc3:before{
+	.sc4:before{
+		z-index: 1;
 		position: absolute;
 		content: '';
 		width: 40%;
@@ -109,9 +135,21 @@ section{
 		background: linear-gradient(to bottom, var(--black-gradient), var(--grey-gradient));
 	}
 
-.sc4{
-	background: yellow;
-}
+	.sc4-img{
+		display: flex;
+		align-items: center;
+		z-index: 2;
+	}
+
+		.sc4-img figure{
+			height: 100%;
+			width: 100%;
+			margin: 0 10px;
+		}
+
+		.sc4-img img{
+			object-fit: cover;
+		}
 
 .sc5{
 	background: purple;
